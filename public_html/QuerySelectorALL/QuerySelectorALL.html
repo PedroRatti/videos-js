@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--querySelectorALL:^é possivel selecionar todos os elementos do meu documento a partir de um indice-->
+    <h1 id="titulo">querySelectorALL</h1>
+    <p class="paragrafos">como  utilizar o querySelectorALL?</p>
+    <p class="paragrafos">se inscreva no canal</p>
+    <p class="paragrafos">deixe seu like</p>
+    <input  type="text" name="entrada"><br><br>
+    <button onclick="funcao">Testar</button>
+    <p class="paragrafos" id="resultado">Resultado</p>
+    <script>
+        function funcao(){
+            console.log(document.querySelectorAll("p")[0]);
+        }
+    </script>
+</body>
+</html>

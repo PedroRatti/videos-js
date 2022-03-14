@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuerySelector</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--QuerySelector é utilizado para selecionar elementos HTML com base em seu id, classes, tipos, atributos e etc...-->
+    <h1 id="titulo">QuerySelector</h1>
+    <p class="paragrafos">Como utilizar QuerySelector?</p>
+    <p class="paragrafos" id="paragrafo2">Se inscreva no canal</p>
+    <input type="text" name="entrada" class="entrada1"><br><br>
+    <button onclick="alerta()">testar</button>
+    <script>
+        function alerta(){
+            var x = document.querySelector("input.entrada1").value;
+            alert(x);
+        }
+    </script>
+</body>
+</html>
